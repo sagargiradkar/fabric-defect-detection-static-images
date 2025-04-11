@@ -2,8 +2,8 @@
 import torch
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-MODEL_PATH = "C:/Users/vlabs/Desktop/model_training/runs/detect/train3/weights/best.pt"
-IMAGE_FOLDER = "C:/Users/vlabs/Desktop/new_evaluated_data"
+MODEL_PATH = "C:/Users/spgir/OneDrive/Documents/BE Project/codebase/model_training/models/runs/train/weights/best.pt"
+IMAGE_FOLDER = "C:/Users/spgir/OneDrive/Documents/BE Project/codebase/model_training/data/test/images"
 CLASS_NAMES = ['Hole', 'Stitch', 'seam']
 CLASS_MAPPING = {i: name for i, name in enumerate(CLASS_NAMES)}
 DETECTED_FOLDER = "./detected_objects"
